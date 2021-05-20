@@ -20,7 +20,7 @@
         <button class="btn check">Check!</button>
       </section>
       <section class="right">
-        <p class="message"><h3>START GUESSING...</h3></p>
+        <p class="message">START GUESSING...</p>
         <p class="label-score">💯 Score: <span class="score">20</span></p>
         <p class="label-highscore">
           🥇 Highscore: <span class="highscore">0</span>
