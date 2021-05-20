@@ -16,12 +16,12 @@ document.querySelector('.check').addEventListener('click',function()
     const userInput = Number(document.querySelector('.guess').value);
     if(!userInput)
     {
-        setMessage('😡 No Number');
+        setMessage('😡 NO NUMBER');
     }
     else if(userInput === secretNumber)
     {
         document.querySelector('.number').textContent = secretNumber;
-        setMessage('😁 Correct Number');
+        setMessage('😁 CORRECT NUMBER');
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width = '30rem';
         if(highScore < score)
@@ -35,12 +35,12 @@ document.querySelector('.check').addEventListener('click',function()
         if(score > 1)
         {
             score--;
-            setMessage(userInput > secretNumber ? ('📈 Too High') : ('📉 Too Low'))
+            setMessage(userInput > secretNumber ? ('📈 TOO HIGH') : ('📉 TOO LOW'))
             document.querySelector('.score').textContent = score;
         }
         else
         {
-            setMessage('😿 You Lost The Game')
+            setMessage('😿 YOU LOST THE GAME')
             document.querySelector('.score').textContent = 0;
         }
             
